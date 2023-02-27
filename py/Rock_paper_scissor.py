@@ -42,7 +42,7 @@ while play_times > 0:
         )
 
     elif (system_choice == 2 and user_input == 1):
-        system_points = system_points + 1  ## if draw stating rise to 1 for , in last itaration line update it will decrese 1 times. Only balance perpose
+        system_points = system_points + 1  ## if draw status rise to 1, for in last itaration line update it will decrese 1 times. Only for balance perpose
         status = "System won"
         print(
             f"{status}. System picked {playing_objects[1]} and you picked {playing_objects[0]}. System Point: {system_points}, your point : {user_points}"

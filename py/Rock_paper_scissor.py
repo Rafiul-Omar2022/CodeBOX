@@ -17,7 +17,7 @@ system_points = 0
 play_times = 3  ## system have defined 3 time of play
 while play_times > 0:
 
-    system_choice = random.randint(1, 3)
+    system_choice = random.randint(1, play_times)
     user_input = int(input(system_message))
 
     if (system_choice == user_input):
@@ -59,7 +59,7 @@ while play_times > 0:
         user_points = user_points + 1
         status = "You won"
         print(
-            f"{status}. System picked {playing_objects[2]} and you picked {playing_objects[0]}. System Point:             {system_points}, your point : {user_points}"
+            f"{status}. System picked {playing_objects[2]} and you picked {playing_objects[0]}. System Point: {system_points}, your point : {user_points}"
         )
 
     elif (system_choice == 3 and user_input == 2):
